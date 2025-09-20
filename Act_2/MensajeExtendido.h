@@ -14,7 +14,8 @@ private:
     std::string deviceId;
 
 public:
-    MensajeExtendido(int codigo = 0, std::vector<datos> dato, std::string userId, std::string deviceId):Mensaje(codigo, dato) {}
+    MensajeExtendido(std::string Nombre, int codigo, std::vector<datos> dato, std::string userId, std::string deviceId);
+    MensajeExtendido(std::string Nombre = "Nodo_n", int codigo = 0, std::string userId = "0", std::string deviceId = "0");
 
     void setUserId(const std::string& u);
 
@@ -23,6 +24,9 @@ public:
     void setDeviceId(const std::string& d);
 
     std::string getDeviceId();
+
+
+    void LoadFromFile();
 };
 
 
