@@ -1,5 +1,0 @@
-deviceId:3
-UserId:19391
-Codigo:123012
-caudal:123123 
-Nivel:999
